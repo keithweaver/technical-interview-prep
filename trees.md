@@ -209,8 +209,75 @@ Fix colors
 	[R:10] [R:12]
 ```
 
+Add an "100"
+```
+		[B:11]
+	[R:10] [R:12]
+			    [R:100]
+```
 
+Fix coloring
+```
+		[B:11]
+	[B:10] [B:12]
+			    [R:100]
+```
 
+Make all new nodes red
+
+Case:
+- Add a root <-- make it black
+
+Case #2:
+- Add a new node and the parent is black (Leave it)
+
+Case #3:
+- Parent and Uncle are red.
+- Add a new red node
+- Change the parent to black
+- Change the uncle to black
+- Change the grandparent to red
+- Recursively call this grandparent
+
+Case #4:
+- Uncle is black
+- Parent and new node are red
+- Rotate left or right depending
+- Call rotate on parent which moves the new node up
+- Recursively call rotate on the P after, it will use Case #5
+
+```
+		G                  G
+	P		U      or    U    P
+	  N                      N
+```
+RESULT:
+```
+          G                G
+     N        U    or  U        N
+   P                               P
+```
+
+Case #5:
+- Uncle is black 
+- Parent is left and node is left
+- Switch parent and grandparent colors
+- Rotation through grandparent
+
+```
+		G                  G
+	P		U      or    U    P
+  N                             N
+```
+
+RESULT:
+```
+		P                  P
+	N		G      or    G    N
+               U        U      
+```
+
+https://www.youtube.com/watch?v=tJ7niBAhDQI
 https://www.youtube.com/watch?v=m9tse9Gr2pE
 
 

@@ -41,6 +41,8 @@ Most recent projects:
 - Depth first serch
 - Difference between inorder, postorder, preorder
 - Computational complexity of each tree traversal, their tradeoffs
+- Dijkstra
+- A*
 
 ###### NP-Complete Problems
 - NP-Complete problems like traveling salesman, knapsack problem
