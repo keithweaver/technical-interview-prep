@@ -283,6 +283,13 @@ https://www.youtube.com/watch?v=m9tse9Gr2pE
 
 
 ## Splay Tree
+- Brings the most used element towards the root
+- Worst Case: O(n)
+- Best Case: O(log n)
+
+https://www.youtube.com/watch?v=Ulxq4DcBVPk
+
+
 
 ## AVL Tree
 - BST

@@ -21,10 +21,10 @@ O(log n): Given a person's name, find the phone number by picking a random point
 O(n log n): There was a mix-up at the printer's office, and our phone book had all its pages inserted in a random order. Fix the ordering so that it's correct by looking at the first name on each page and then putting that page in the appropriate spot in a new, empty phone book.
 
 
-		Array (Unsorted) 	Linked List 	Array (Sorted) 	Binary Search Tree (Balanced)
-Search  	O(n)   				O(n) 			O(log n) 			O(log n)
-Insert 		O(1) 				O(1) 			O(n) 				O()
-Remove 		O(n) 				O(n) 			O(n) 				O()
+		        Array (Unsorted) 	Linked List 	Array (Sorted) 	Binary Search Tree (Balanced)
+		Search  	O(n)   				O(n) 			O(log n) 			O(log n)
+		Insert 		O(1) 				O(1) 			O(n) 				O()
+		Remove 		O(n) 				O(n) 			O(n) 				O()
 
 
 
