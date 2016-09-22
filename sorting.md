@@ -220,4 +220,16 @@ Pros for Merge Sort:
 Cons for Merge Sort:
 - Not as fast on average as Quick sort
 
-Reference: http://www.brucemerry.org.za/manual/algorithms/sorting.html
+
+### Heap Sort
+- Go to the last parent (bottom right), working your way back level and towards the left.
+- if the child (pick biggest) > parent, swap them
+- doing stuff above once
+- put everything in the array, root is position 1 and its kids are x*2 (x = being parent/current) & (x*2) +1
+
+
+Reference: 
+
+http://www.brucemerry.org.za/manual/algorithms/sorting.html
+
+https://www.youtube.com/watch?v=PqS5T9ZKZno

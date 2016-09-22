@@ -784,4 +784,30 @@ public class AVLTree {
 }
 ```
 
+
+### N-ary or K-ary Tree
+- All nodes have no children or n children
+- Let I be the number of internal (non-leaf) nodes
+- Let L be the number of leafs
+- Given L and I
+- Like have n childern (possible more than 2)
+
+```
+       x
+  /  / | \  \
+ a   b c  d  e
+     //|\\
+	fg h ij
+
+	
+```
+
+
+https://www.youtube.com/watch?v=jGElHK0jZAQ
+
 ### Helper.java
+
+
+http://www.brpreiss.com/books/opus5/html/page257.html
+
+http://stackoverflow.com/questions/12269700/n-ary-trees-data-structures

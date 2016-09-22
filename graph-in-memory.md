@@ -34,8 +34,39 @@ For sparse graph, the list approach is better because you don't need to account 
 - The advantage with this data structure is that the time complexity to access any given node is O(1).
 
 
+Adjacency List
+```
+class Graph {
+    //Map of adjacency lists for each node
+    Map<Integer, List<Integer>> adj;
+
+    public Graph(int[] nodes) {
+        //your node labels are consecutive integers starting with one. 
+        //to make the indexing easier we will allocate an array of adjacency one element larger than necessary
+        adj = new HashMap<Integer, LinkedList<Integer>>();
+        for (int i = 0; i < nodes.length; ++i) {
+            adj.put(i, new LinkedList<Integer>());
+        }
+    }
+
+    public addNeighbor(int v1, int v2) {
+        adj.get(v1).add(v2);
+    }
+
+    public List<Integer> getNeighbors(int v) {
+        return adj.get(v);
+    }
+
+}
+```
+```
+g.addNeighbor(v1, v2);
+g.addNeighbor(v2, v1);
+```
+
 
 
 http://stackoverflow.com/questions/3287003/three-ways-to-store-a-graph-in-memory-advantages-and-disadvantages
 http://stackoverflow.com/questions/27809894/object-and-pointer-graph-representations
 https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs
+http://stackoverflow.com/questions/8542523/adjacency-list-for-undirected-graph

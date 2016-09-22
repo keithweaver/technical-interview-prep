@@ -177,3 +177,60 @@ Shift every one down 1 elements so its N+1 and the last guy, move to the first p
 Or
 I'd actually go the other way, store user 1, then put user 2 in user 1 spot.
 ```
+
+
+#### Question
+Implement an online crossword puzzle solver.
+
+#### My Solution
+
+Not actually my solution, found on the internet (Link below).
+
+```
+The corssword problem is NP-Complete, so your best shot is brute force: just try all possibilities, and stop when a possibility is a valid. Return failure when you exhausted all possible solutions.
+
+
+solve(words,grid):
+   if words is empty:
+       if grid.isValudSol():
+          return grid
+       else:
+          return None
+   for each word in words:
+       possibleSol <- grid.fillFirst(word)
+       ret <- solve(words\{word},possibleSol)
+       if (ret != None):
+          return ret
+   return None
+
+
+
+#pseudo-code
+solve ( words , grid ) : solve ( words , grid , None ) 
+
+solve ( words , grid , filledPositions ) :
+    if words is empty :
+        if grid is solved :
+            return grid
+        else :
+            raise ( no solution )
+    for ( current position ) as the first possible word position in grid 
+            that is not of filledPositions :
+        # note : a word position must have no letters before the word
+            # 'before the word' means, eg, to the left of a horizontal word
+            # no letters may be placed over a ' ' 
+            # no letters may be placed off the grid
+        # note : a location may have two 'positions' : one across , one down
+        for each word in words :
+            make a copy of grid
+            try :
+                fill grid copy, with the current word, at the current position
+            except ( cannot fill position ) :
+                break
+            try :
+                return solve ( words\{word} , grid copy , 
+                        filledPositions+{current position} )
+            except ( no solution ) :
+                break
+        raise ( no solution )
+```
