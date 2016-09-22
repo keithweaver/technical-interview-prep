@@ -171,5 +171,110 @@ H*
 ```
 
 
+### Depth First Search
+
+- Unlike the other algorithm, this one looks at the top of the "stack". It uses the last item added working its way to the first item added.
+- Looks at the unvisited vertices in alphabetical order, if any arent "found" vertices yet, add to order and stack. if not pop it off the stack
+
+
+```
+Given: Starting at A
+
+Order:A
+Queue:A
+
+B --- F-.
+| \   |  \
+|  A* |   C
+|  | \|     \
+|  |   D     H
+E--G
+
+Order:AB
+Queue:AB
+
+B*--- F-.
+| \   |  \
+|  A  |   C
+|  | \|     \
+|  |   D     H
+E--G
+
+Order:ABE
+Queue:ABE
+
+B --- F-.
+| \   |  \
+|  A  |   C
+|  | \|     \
+|  |   D     H
+E*-G
+
+Order:ABEG
+Queue:ABEG
+
+B --- F-.
+| \   |  \
+|  A  |   C
+|  | \|     \
+|  |   D     H
+E--G*
+
+//no vertices unvisited so take off last elements till one does (Hint: B->F)
+
+Order:ABEGF
+Queue:ABF
+
+B --- F*.
+| \   |  \
+|  A  |   C
+|  | \|     \
+|  |   D     H
+E--G
+
+Order:ABEGFC
+Queue:ABFC
+
+B --- F-.
+| \   |  \
+|  A  |   C*
+|  | \|     \
+|  |   D     H
+E--G
+
+Order:ABEGFCH
+Queue:ABFCH
+
+B --- F-.
+| \   |  \
+|  A  |   C
+|  | \|     \
+|  |   D     H*
+E--G
+
+Order:ABEGFCHD
+Queue:ABFD
+
+B --- F-.
+| \   |  \
+|  A  |   C
+|  | \|     \
+|  |  D*     H
+E--G
+
+Order:ABEGFCHD
+Queue:
+
+B --- F-.
+| \   |  \
+|  A  |   C
+|  | \|     \
+|  |  D*     H
+E--G
+
+
+
+```
+
 https://www.youtube.com/watch?v=we2xFCPkH0Y
 https://www.youtube.com/watch?v=bIA8HEEUxZI
