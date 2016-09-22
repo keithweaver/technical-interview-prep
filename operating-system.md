@@ -101,6 +101,66 @@ Deadlock is a condition in which a task waits indefinitely for conditions that c
 Double check locking is a software design pattern used to reduce the overhead of acquiring a lock by first testing the locking criterion (the "lock hint") without actually acquiring the lock. The pattern, when implemented in some language/hardware combinations, can be unsafe. At times, it can be considered an anti-pattern.
 
 
+## What is locks, mutexes, semaphores?
+
+
+A lock allows only one thread to enter the part that's locked and the lock is not shared with any other processes.
+
+
+A mutex is the same as a lock but it can be system wide (shared by multiple processes).
+
+
+A semaphore does the same as a mutex but allows x number of threads to enter.
+
+
+
+## What resources does a process need?
+
+
+
+## What resources does a thread need?
+
+
+
+
+## What is it? How does context switching work? How is it initiated by the Operating System and hardware?
+
+A context switch is the switching of the CPU (central processing unit) from one process or thread to another. A process (also sometimes referred to as a task) is an executing (i.e., running) instance of a program.
+
+
+Context switching can be described in slightly more detail as the kernel (i.e., the core of the operating system) performing the following activities with regard to processes (including threads) on the CPU: (1) suspending the progression of one process and storing the CPU's state (i.e., the context) for that process somewhere in memory, (2) retrieving the context of the next process from memory and restoring it in the CPU's registers and (3) returning to the location indicated by the program counter (i.e., returning to the line of code at which the process was interrupted) in order to resume the process.
+
+
+Swapping of processes
+
+
+Context switches can occur only in kernel mode. Kernel mode is a privileged mode of the CPU in which only the kernel runs and which provides access to all memory locations and all other system resources.
+
+
+Context switching is an essential feature of multitasking operating systems.
+
+
+A context switch can also occur as a result of a hardware interrupt, which is a signal from a hardware device (such as a keyboard, mouse, modem or system clock) to the kernel that an event (e.g., a key press, mouse movement or arrival of data from a network connection) has occurred.
+
+
+
+## Cost of Context Switches
+
+Context switching is generally computationally intensive. That is, it requires considerable processor time, which can be on the order of nanoseconds for each of the tens or hundreds of switches per second. Thus, context switching represents a substantial cost to the system in terms of CPU time and can, in fact, be the most costly operation on an operating system.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 http://erlang.org/download/armstrong_thesis_2003.pdf
 http://stackoverflow.com/questions/4315292/concurrency-processes-vs-threads
 https://en.wikipedia.org/wiki/Thread_(computing)
@@ -108,3 +168,5 @@ https://en.wikipedia.org/wiki/Concurrency_(computer_science)
 http://stackoverflow.com/questions/520837/what-are-common-concurrency-pitfalls
 http://stackoverflow.com/questions/6155951/whats-the-difference-between-deadlock-and-livelock
 https://www.quora.com/What-is-the-difference-between-deadlock-and-livelock-deadlock-infinite-recursion-and-starvation
+http://stackoverflow.com/questions/2332765/lock-mutex-semaphore-whats-the-difference
+https://en.wikipedia.org/wiki/Context_switch
