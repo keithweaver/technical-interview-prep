@@ -293,6 +293,15 @@ E--G
 - Visits root
 
 
+Complexity for Depth First Search and Breadth First Search is O(n) because you have to visit each of the nodes.
+
+BFS is more adequate to finding shortest paths
+
+With DFS, you don't have such a guarantee, since you explore nodes in depth, you can find a longer path that just happened to be explored earlier, and you'll need to explore the entire graph to make sure that that is the shortest path.
+
+
 
 https://www.youtube.com/watch?v=we2xFCPkH0Y
 https://www.youtube.com/watch?v=bIA8HEEUxZI
+http://stackoverflow.com/questions/9658700/time-complexity-of-inorder-tree-traversal-of-binary-tree-on
+http://stackoverflow.com/questions/16710374/breadth-first-search-or-depth-first-search
