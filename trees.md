@@ -286,6 +286,38 @@ https://www.youtube.com/watch?v=m9tse9Gr2pE
 - Brings the most used element towards the root
 - Worst Case: O(n)
 - Best Case: O(log n)
+- Use rotations
+- Not perfectly balanced
+##### Rules
+- If x (Node being looked for) is a left child of a right child or a right child of left child
+- If x (Node being looked for) is a left child of a left child or right child of a right child rotate it through the grandpa
+- These other two rules only work if the node is an equal distance away. If x is the child of the root, you cant do a double rotate. You will just rotate x up one.
+
+You are looking for x
+```
+
+20          16              x
+  \           \            / \
+   16  =>      x    =>   16   20
+  /             \
+ x               20
+
+
+20                16         x
+  \              /  \         \
+   16     =>    x   20   =>    16
+     \                          \
+      x                          20
+
+
+  12              x
+ /  \            / \
+20   x     =>  12   5
+      \        /      
+       5      20      
+
+```
+
 
 https://www.youtube.com/watch?v=Ulxq4DcBVPk
 
