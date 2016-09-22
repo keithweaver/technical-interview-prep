@@ -276,5 +276,23 @@ E--G
 
 ```
 
+##### These only happen with Depth First Search
+#### PreOrder
+- Visits root
+- Visits left child
+- Visits right child
+
+#### In Order
+- Visits left child
+- Visits root
+- Visits right child
+
+#### Post Order
+- Visits left child
+- Visits right child
+- Visits root
+
+
+
 https://www.youtube.com/watch?v=we2xFCPkH0Y
 https://www.youtube.com/watch?v=bIA8HEEUxZI
