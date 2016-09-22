@@ -1,10 +1,9 @@
 # interview-prep
 
-### Behavioral
+This a combination of piece of information I found around the internet. If you believe there is a better answer, submit a pull request. Most of this content was put together quickly before an interview for review. 
 
-Most recent projects:
-- Translate Android Strings
-- Smart Alarm (@HacktheNorth)
+
+If you use it, please star it so I know it is getting use.
 
 
 
