@@ -226,7 +226,8 @@ Cons for Merge Sort:
 - if the child (pick biggest) > parent, swap them
 - doing stuff above once
 - put everything in the array, root is position 1 and its kids are x*2 (x = being parent/current) & (x*2) +1
-
+- swap the last and first values
+- put the new last element in a new array in position one
 
 Reference: 
 

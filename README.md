@@ -63,10 +63,4 @@ If you use it, please star it so I know it is getting use.
 - N-choose-k problem
 
 
-https://www.careercup.com/page?pid=google-interview-questions&job=software-engineer-interview-questions
-https://projecteuler.net/
-http://square.github.io/
-http://codekata.pragprog.com/
-https://blog.codinghorror.com/why-cant-programmers-program/
-
 
