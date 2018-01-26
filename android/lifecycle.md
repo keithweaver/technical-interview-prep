@@ -2,12 +2,14 @@
 
 *Probably will tell you to draw it*
 
+
 - onCreate
 - onStart
 - onResume
 - onPause
 - onStop
 - onDestroy
+
 
 `onCreate` is called when app opens. Loads the UI. `onStart` is next, I'll get back to this. `onResume` is then called. Then your user is in the app. `onPause` activity leaves the foreground, ex. hit the view open applications but don't minimize or close it. `onStop` is called if you minimize the activity. `onStart` is called if the app is unminized or brought to the front. `onDestroy` is called when you kill the app.
 
@@ -39,6 +41,17 @@ Yes, these are thought as a abstract activities.
 
 # What is the fragment lifecycle?
 
+- onAttach -> onCreateView
+- onCreate
+- onCreateView
+- onActivityCreated
+- onStart
+- onResume
+- onPause
+- onStop -> onStart
+- onDestroyView -> onCreateView or onDetach
+- onDestroy
+- onDetach
 
 # What method is only called once during a fragments lifecycle?
 
@@ -55,3 +68,4 @@ Source:
 - https://www.ntu.edu.sg/home/ehchua/programming/android/images/Android_ActivityLifeCycle.png
 - https://www.toptal.com/android/interview-questions
 - https://www.javatpoint.com/android-interview-questions
+- https://developer.xamarin.com/guides/android/platform_features/fragments/creating-a-fragment/Images/fragment_lifecycle.png
