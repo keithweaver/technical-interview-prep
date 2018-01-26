@@ -8,7 +8,13 @@
 
 # Abstract vs Interface
 
-# Can an abstract method be private
+# Can an abstract method be private?
+
+# Benefits to using an abstract class?
+
+# Describe a situation when you would use an abstract class.
+
+# When is an abstract class not the best choice?
 
 # What is Inheritance?
 
