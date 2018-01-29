@@ -18,6 +18,8 @@
 
 # What is Inheritance?
 
+# How to extend?
+
 # Can a child access a parent methods, constructor, or variables? What types?
 
 # Can a parent access a child's methods, constructor, or variables? What types?
