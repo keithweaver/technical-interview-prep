@@ -10,7 +10,7 @@ A method that does not need to be instantiate and can "stand" on it's own.
 
 # What is an inner class?
 
-It is a method written inside another class.
+It is a method writtn inside another class.
 
 
 # Static Inner vs Non Static Inner Class
